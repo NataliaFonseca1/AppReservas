@@ -26,7 +26,7 @@ public class Hotel {
     private String description;
     private String urlImg;
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL)
-    private List<Reserva> reservas = new ArrayList<>();
+    private List<Reserve> reservations = new ArrayList<>();
     @ManyToMany
     @JoinTable(name="hotel_category",
     joinColumns = @JoinColumn(name="hotel_id"),

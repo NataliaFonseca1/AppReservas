@@ -23,5 +23,5 @@ public class Person {
     private String email;
     private String cpf;
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
-    private List<Reserva> reservas = new ArrayList<>();
+    private List<Reserve> reservations = new ArrayList<>();
 }
